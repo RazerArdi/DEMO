@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Modul4PROLAN/Modul4PROLAN.iml" filepath="$PROJECT_DIR$/Modul4PROLAN/Modul4PROLAN.iml" />
       <module fileurl="file://$PROJECT_DIR$/Visualisasi.iml" filepath="$PROJECT_DIR$/Visualisasi.iml" />
     </modules>
   </component>
