@@ -3,6 +3,9 @@ package MODUL4.MODUL4_T1;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * @author BayuArdiyansyah
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random_Character characterGenerator = new Random_Character();

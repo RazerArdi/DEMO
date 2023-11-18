@@ -2,6 +2,9 @@ package MODUL4.MODUL4_T1;
 import java.util.Random;
 
 public class Random_Number {
+    /**
+     * @author BayuArdiyansyah
+     */
 
     private Random random;
 

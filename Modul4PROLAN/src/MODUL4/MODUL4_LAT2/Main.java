@@ -3,6 +3,10 @@ package MODUL4.MODUL4_LAT2;
 import java.util.Scanner;
 
 public class Main {
+
+    /**
+     * @author BayuArdiyansyah
+     */
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -19,7 +23,7 @@ public class Main {
 
             textAnalyzerApp.processChoice(MILIH);
 
-            System.out.println(); // Output baru setelah setiap operasi
+            System.out.println();
         } while (MILIH != 5);
 
         scanner.close();

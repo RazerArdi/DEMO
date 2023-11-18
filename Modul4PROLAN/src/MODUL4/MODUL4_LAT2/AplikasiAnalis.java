@@ -1,6 +1,11 @@
 package MODUL4.MODUL4_LAT2;
 
 public class AplikasiAnalis {
+
+    /**
+     * @author BayuArdiyansyah
+     */
+
     private ANALISTEKS textAnalyzer;
 
     public AplikasiAnalis(ANALISTEKS textAnalyzer) {
@@ -39,7 +44,7 @@ public class AplikasiAnalis {
                 textAnalyzer.ANALISTEKS();
                 System.out.print("Masukkan kata yang ingin dicari: ");
                 String searchWord = Main.scanner.nextLine().toLowerCase();
-                int occurrences = textAnalyzer.getWordOccurrences().getOrDefault(searchWord, 0);
+                int occurrences = textAnalyzer.getKATAs().getOrDefault(searchWord, 0);
                 System.out.println("Kata '" + searchWord + "' ditemukan sebanyak " + occurrences + " kali dalam teks.");
                 break;
 

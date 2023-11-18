@@ -9,29 +9,29 @@ public class SOURCE1LAT1 {
     }
 
     public void RUNKALKULATOR() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner InputPil = new Scanner(System.in);
         int PILIH;
 
         do {
             displayMenu();
             System.out.print("Pilih operasi (1/2/3/4/5): ");
-            PILIH = scanner.nextInt();
+            PILIH = InputPil.nextInt();
 
             switch (PILIH) {
                 case 1:
-                    KALKULATOR.squareRootOperation(scanner);
+                    KALKULATOR.AkarKuadrat(InputPil);
                     break;
 
                 case 2:
-                    KALKULATOR.powerOperation(scanner);
+                    KALKULATOR.Pangkat(InputPil);
                     break;
 
                 case 3:
-                    KALKULATOR.logarithmOperation(scanner);
+                    KALKULATOR.Logaritma(InputPil);
                     break;
 
                 case 4:
-                    KALKULATOR.factorialOperation(scanner);
+                    KALKULATOR.Faktorial(InputPil);
                     break;
 
                 case 5:
@@ -42,10 +42,10 @@ public class SOURCE1LAT1 {
                     System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
             }
 
-            System.out.println(); // Output baru setelah setiap operasi
+            System.out.println();
         } while (PILIH != 5);
 
-        scanner.close();
+        InputPil.close();
     }
 
     private void displayMenu() {

@@ -3,6 +3,9 @@ package MODUL4.MODUL4_T1;
 import java.util.Random;
 
 public class Random_Character {
+    /**
+     * @author BayuArdiyansyah
+     */
     private static final int LOWER_BOUND_UPPERCASE = 65;
     private static final int UPPER_BOUND_UPPERCASE = 90;
     private static final int LOWER_BOUND_LOWERCASE = 97;
@@ -17,7 +20,7 @@ public class Random_Character {
     }
 
     public char generateRandomCharacter() {
-        int category = random.nextInt(3); // 0 for uppercase, 1 for lowercase, 2 for digit
+        int category = random.nextInt(3);
 
         switch (category) {
             case 0:

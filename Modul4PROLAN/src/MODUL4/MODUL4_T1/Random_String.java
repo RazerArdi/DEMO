@@ -1,6 +1,9 @@
 package MODUL4.MODUL4_T1;
 
 public class Random_String {
+    /**
+     * @author BayuArdiyansyah
+     */
     private Random_Character characterGenerator;
 
     public Random_String(Random_Character characterGenerator) {
