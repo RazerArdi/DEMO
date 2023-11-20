@@ -20,9 +20,9 @@ public class Random_Character {
     }
 
     public char generateRandomCharacter() {
-        int category = random.nextInt(3);
+        int Kategori = random.nextInt(3);
 
-        switch (category) {
+        switch (Kategori) {
             case 0:
                 return (char) (random.nextInt(UPPER_BOUND_UPPERCASE - LOWER_BOUND_UPPERCASE + 1) + LOWER_BOUND_UPPERCASE);
 
