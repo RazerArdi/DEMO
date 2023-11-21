@@ -7,7 +7,7 @@ public class Main {
      * @author BayuArdiyansyah
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner INPUTOPSI = new Scanner(System.in);
         Random_Character characterGenerator = new Random_Character();
         Random_Number randomNumberGenerator = new Random_Number();
         Random_String randomStringGenerator = new Random_String(characterGenerator);
@@ -17,32 +17,32 @@ public class Main {
         do {
             displayMenu();
             System.out.print("Pilih opsi (1/2/3): ");
-            option = scanner.nextInt();
+            option = INPUTOPSI.nextInt();
 
             switch (option) {
                 case 1:
                     try {
                         System.out.print("Masukkan batas bawah angka acak: ");
-                        int lowerBound = scanner.nextInt();
+                        int lowerBound = INPUTOPSI.nextInt();
                         System.out.print("Masukkan batas atas angka acak: ");
-                        int upperBound = scanner.nextInt();
+                        int upperBound = INPUTOPSI.nextInt();
                         int randomNumber = randomNumberGenerator.generateRandomNumber(lowerBound, upperBound);
                         System.out.println("Angka acak: " + randomNumber);
                     } catch (Exception e) {
                         System.out.println("Input tidak valid. Masukkan angka yang benar.");
-                        scanner.nextLine(); // membersihkan buffer
+                        INPUTOPSI.nextLine();
                     }
                     break;
 
                 case 2:
                     try {
                         System.out.print("Masukkan panjang string acak: ");
-                        int length = scanner.nextInt();
+                        int length = INPUTOPSI.nextInt();
                         String randomString = randomStringGenerator.generateRandomString(length);
                         System.out.println("String acak: " + randomString);
                     } catch (Exception e) {
                         System.out.println("Input tidak valid. Masukkan panjang yang benar.");
-                        scanner.nextLine(); // membersihkan buffer
+                        INPUTOPSI.nextLine();
                     }
                     break;
 
@@ -54,10 +54,10 @@ public class Main {
                     System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
             }
 
-            System.out.println(); // Output baru setelah setiap operasi
+            System.out.println();
         } while (option != 3);
 
-        scanner.close();
+        INPUTOPSI.close();
     }
 
     private static void displayMenu() {

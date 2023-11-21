@@ -7,14 +7,14 @@ public class ElementRatioCalculator {
         int[] sortedData = Arrays.copyOf(data, data.length);
         Arrays.sort(sortedData);
 
-        // Menampilkan array yang telah diurutkan
+
         System.out.println("Data yang sudah diurutkan:");
         for (int value : sortedData) {
             System.out.print(value + " ");
         }
         System.out.println();
 
-        // Mencari indeks elemen
+
         ArrayManipulator arrayManipulator = new ArrayManipulator();
         int elementIndex = arrayManipulator.findElementIndex(sortedData, targetValue);
 
@@ -25,7 +25,7 @@ public class ElementRatioCalculator {
             System.out.println("Nilai tidak ditemukan.");
         }
 
-        // Menghitung rasio nilai positif, negatif, dan nol
+
         int positiveCount = countPositiveElements(data);
         int negativeCount = countNegativeElements(data);
         int zeroCount = countZeroElements(data);
