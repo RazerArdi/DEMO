@@ -1,5 +1,4 @@
 package MODUL4.MODUL4_T2;
-
 import java.util.Arrays;
 
 public class ElementRatioCalculator {

@@ -6,7 +6,7 @@ public class Main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] data = {-84, -63, -42, -15, 0, 5, 19, 27, 38, 50, 61, 72};
+        int[] data = {38, -15, 72, 0, -42, 19, -63, 50, 27, -84, 61, 5};
 
         ElementRatioCalculator ratioCalculator = new ElementRatioCalculator();
 

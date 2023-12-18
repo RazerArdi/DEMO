@@ -1,5 +1,8 @@
 package MODUL4.MODUL4_T1;
 
+import java.lang.StringBuilder;
+import java.lang.*;
+
 public class Random_String {
     /**
      * @author BayuArdiyansyah
